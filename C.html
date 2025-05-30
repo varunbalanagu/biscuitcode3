@@ -1,0 +1,171 @@
+<html>
+    <head>
+      <style>
+        body{
+            background-color: tomato;
+            background-position: 550px;
+            
+        }
+      </style>
+    </head>
+    <body>
+        <h1 style="color: blanchedalmond; text-align: center;" >C Language</h1>
+        
+            <h1 style="color: blanchedalmond;">INTRODUCTION</h1>
+            <p style="font-size: 25px;">
+            C is considered mother of all programming languages as many later languages have borrowed syntax/features directly or indirectly from the C language like the syntax of Java, PHP, JavaScript, and many other languages that are mainly based on the C language.
+
+So, if a person learns C programming first, it will help them to learn any modern programming language as well provide a deeper understanding of the fundamentals of programming and underlying architecture of the operating system like pointers, working with memory locations etc.
+
+<h1 style="color: blanchedalmond;"> Structure of a C Program</h1>
+<p style="font-size: 25px;">
+A C program typically begins with preprocessor directives that include necessary header files. The execution starts from the main() function, which contains the program’s logic. Inside the main function, variables are declared, and operations or function calls are performed. Every statement ends with a semicolon. The program usually ends with a return statement to indicate successful execution.
+</p>
+<h1 style="color: blanchedalmond;">2. Data Types</h1>
+<p style="font-size: 25px;">
+C provides various data types to define variables, such as int for integers, float for floating-point numbers, char for characters, and double for high-precision floating points. These types determine the kind of data a variable can store. Additionally, C supports derived data types like arrays, pointers, structures, and unions. There is also the void type used for functions that do not return any value.
+</p>
+<h1 style="color: blanchedalmond;">3. Variables and Constants</h1>
+<p style="font-size: 25px;">
+Variables are used to store data that can change during program execution. They must be declared with a specific data type before use. Constants, on the other hand, are fixed values that cannot be altered once defined. In C, constants are typically declared using the const keyword to prevent modification.
+</p>
+<h1 style="color: blanchedalmond;">4. Operators</h1>
+<p style="font-size: 25px;">
+Operators in C are symbols that perform operations on variables and values. These include arithmetic operators for mathematical calculations, relational operators for comparisons, and logical operators for decision-making. There are also assignment, bitwise, and increment/decrement operators. Operators are essential for implementing logic and calculations in a program.
+</p>
+<h1 style="color: blanchedalmond;">5. Control Statements</h1>
+<p style="font-size: 25px;">
+Control statements manage the flow of execution in a program. Conditional statements like if, else, and switch allow decision-making based on conditions. Looping statements like for, while, and do-while repeat blocks of code based on conditions. Other control flow statements include break to exit loops and continue to skip iterations.
+</p>
+<h1 style="color: blanchedalmond;">6. Functions</h1>
+<p style="font-size: 25px;">
+Functions are self-contained blocks of code that perform specific tasks. They help in organizing code, improving readability, and promoting reuse. Functions can accept inputs called parameters and may return a value. C provides both built-in library functions and allows the creation of user-defined functions.
+</p>
+<h1 style="color: blanchedalmond;">7. Arrays</h1>
+<p style="font-size: 25px;">
+Arrays are collections of elements of the same data type stored in contiguous memory locations. They allow multiple values to be stored and accessed using a single variable name with an index. Arrays can be one-dimensional or multi-dimensional, like matrices.
+</p>
+<h1 style="color: blanchedalmond;">8. Strings</h1>
+<p style="font-size: 25px;">
+In C, strings are represented as arrays of characters ending with a null character (\0). They are used to store and manipulate sequences of characters. Standard string-handling functions are available in the C library to perform operations like copying, comparing, and concatenating strings.
+</p>
+<h1 style="color: blanchedalmond;">9. Pointers</h1>
+<p style="font-size: 25px;">
+Pointers are variables that store the memory addresses of other variables. They enable dynamic memory management and are crucial for advanced features like passing parameters by reference. Pointers are also used for working with arrays and functions efficiently.
+</p>
+<h1 style="color: blanchedalmond;">10. Structures</h1>
+<p style="font-size: 25px;">
+Structures allow grouping variables of different data types under one name. They are useful for creating complex data models, such as records or objects. Each variable inside a structure is called a member, and structures are widely used in file handling and system programming.
+</p>
+<h1 style="color: blanchedalmond;">11. File Handling</h1>
+<p style="font-size: 25px;">
+File handling in C allows programs to read from and write to files stored on disk. It involves using file pointers and functions to open, read, write, and close files. This capability is essential for tasks like data logging, configuration management, and persistent storage.
+</p>
+
+        </p>
+<h1 style="color: blanchedalmond;">BASIC SYNTAX</h1>
+<p style="font-size: 25px;">
+    for (initialization; condition; increment) {
+    // loop body
+}
+while (condition) {
+    // loop body
+}
+do {
+    // loop body
+} while (condition);
+if (condition) {
+    break;
+}
+if (condition) {
+    continue;
+}
+</p>
+<h1 style="color: blanchedalmond;">DATA TYPES</h1>
+<p style="font-size: 25px;">
+  char
+
+Size: 1 byte
+
+Description: Used to store a single character (e.g., 'A', 'z').
+<br>
+<br>
+
+int
+
+Size: 4 bytes (typical)
+
+Description: Used to store whole numbers, both positive and negative.
+<br>
+<br>
+
+short
+
+Size: 2 bytes
+
+Description: Used to store smaller-range integers.
+<br>
+<br>
+long
+
+Size: 4 or 8 bytes (depends on system)
+
+Description: Used to store large integers.
+<br>
+<br>
+
+long long
+
+Size: 8 bytes
+
+Description: Used to store very large integers.
+<br>
+<br>
+
+float
+
+Size: 4 bytes
+
+Description: Used to store decimal numbers with single precision (around 6–7 digits).
+<br>
+<br>
+
+double
+
+Size: 8 bytes
+
+Description: Used to store decimal numbers with double precision (around 15–16 digits).
+<br>
+<br>
+
+long double
+
+Size: 10 to 16 bytes (depending on compiler)
+
+Description: Used to store very large or very precise decimal numbers.
+<br>
+<br>
+void
+
+Size: 0 bytes
+
+Description: Represents no data type; often used for functions that return nothing.
+<br>
+<br>
+
+_Bool / bool (available in C99 and later)
+
+Size: 1 byte
+
+Description: Used to store boolean values (true or false).
+<br>
+<br>
+</p>
+<h1>
+    hey coder ! click here to practise your language skills 
+</h1>
+<button style="height: 45px; width: 80px; background-color: white;" onclick='window.location="mcq1.html"'>click here</button>
+
+
+    </body>
+</html>

@@ -1,0 +1,177 @@
+<html>
+    <head>
+        <style>
+            body{
+                background-color: darkkhaki;
+                background-size: 850px;
+            }
+            button{
+                width: 150px;
+                height: 50px;
+            }
+        </style>
+        <body>
+            <h1 style="color: brown; font-size: 25px; text-align: center;">JAVA language</h1>
+            <h1 style="color: brown;"> Variables and Data Types</h1>
+            <p style="font-size: 25px;">Java is statically typed; every variable must have a declared type.
+Primitive types: int, float, double, char, boolean, byte, short, long.
+Non-primitive types include String, Arrays, Objects.
+Example: int x = 10; String name = "Java";</p>
+              <h1 style="color: brown;"> Operators</h1>
+           <p style="font-size: 25px;">Includes arithmetic (+, -, *, /, %), comparison (==, !=, <, >), logical (&&, ||, !), assignment (=, +=, etc.), bitwise (&, |, ^, ~, <<, >>).
+Used to perform operations on variables and values.</p>
+               <h1 style="color: brown;">  Conditional Statements</h1>
+                <p style="font-size: 25px;"> Java uses if, else if, else, and switch for decision-making.
+Syntax includes braces {} even for single-line blocks.
+<br>
+<br>
+if (x > 0) {
+    <br>
+    System.out.println("Positive");
+    <br>
+} else {
+    <br>
+    System.out.println("Not Positive");
+}<br>
+</p>
+               <h1 style="color: brown;"> Loops</h1>
+                <p style="font-size: 25px;"> Java supports for, while, and do-while loops.
+Use break to exit a loop and continue to skip the current iteration.
+Enhanced for-each loop is used for arrays and collections.
+
+</p>
+               <h1 style="color: brown;"> Functions (Methods)</h1>
+                <p style="font-size: 25px;">Declared inside classes using returnType methodName(params).
+Use static for class methods.
+Can be overloaded with different parameter lists.
+<br>
+int add(int a, int b) {
+    <br>
+    return a + b;
+}
+ </p>
+                  <h1 style="color: brown">Arrays and Collections</h1>
+                   <p style="font-size: 25px;">
+                   Arrays: Fixed size, e.g., int[] arr = new int[5];
+Collections: Resizable structures like ArrayList, HashMap, HashSet.
+Use java.util.* for collection classes.
+                   </p>
+                     <h1 style="color: brown;"> Strings</h1>
+                    <p style="font-size: 25px;">Immutable and handled by the String class.
+Common methods: .length(), .charAt(), .substring(), .equals(), .compareTo().
+Use StringBuilder or StringBuffer for mutable strings.
+
+</p>
+                     <h1 style="color: brown;"> File Handling</h1>
+                     <p style="font-size: 25px;">Use classes from java.io or java.nio.file.
+Common classes: File, FileReader, FileWriter, BufferedReader.
+File myFile = new File("data.txt");
+<br>
+if (myFile.exists()) {<br> ... }
+</p>
+                      <h1 style="color: brown;"> OOP (Object-Oriented Programming)</h1>
+                        <p style="font-size: 25px;">Core principles: Encapsulation, Inheritance, Polymorphism, Abstraction.
+Use class to define objects, extends for inheritance.
+Access modifiers: private, public, protected, default.
+
+</p>
+                   <h1 style="color: brown;"> CRUNCHY SYNTAXES (OOPS0</h1>
+                        <p style="font-size: 25px;"> Class and Object
+                            class Car {
+                                <br>
+    String color = "Red";
+    <br>
+    void drive() {
+        <br>
+        System.out.println("Car is driving");
+    }
+    <br>
+}
+<br>
+<br>
+public class Main {
+    <br><br>
+    public static void main(String[] args) {
+        <br>
+        <br>
+        Car myCar = new Car();
+        <br>   // Object creation
+        System.out.println(myCar.color);
+        <br>
+        myCar.drive();
+    }
+}
+
+ </p>
+  <h1 style="color: brown"> Encapsulation</h1>
+  <p style="font-size: 25px;">class Student {<br>
+&nbsp;&nbsp;private int age;<br><br>
+
+&nbsp;&nbsp;public void setAge(int a) {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;age = a;<br>
+&nbsp;&nbsp;}<br><br>
+
+&nbsp;&nbsp;public int getAge() {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;return age;<br>
+&nbsp;&nbsp;}<br>
+}
+</p>
+<h1 style="color: brown"> Inheritance</h1>
+  <p style="font-size: 25px;">class Animal {<br>
+&nbsp;&nbsp;void sound() {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;System.out.println("Animal makes sound");<br>
+&nbsp;&nbsp;}<br>
+}<br><br>
+
+class Dog extends Animal {<br>
+&nbsp;&nbsp;void bark() {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;System.out.println("Dog barks");<br>
+&nbsp;&nbsp;}<br>
+}
+<h1 style="color: brown"> Polymorphism - Method Overloading
+
+</h1>
+  <p style="font-size: 25px;">
+class Math {<br>
+&nbsp;&nbsp;int add(int a, int b) {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;return a + b;<br>
+&nbsp;&nbsp;}<br><br>
+
+&nbsp;&nbsp;double add(double a, double b) {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;return a + b;<br>
+&nbsp;&nbsp;}<br>
+}
+class Animal {<br>
+&nbsp;&nbsp;void sound() {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;System.out.println("Animal sound");<br>
+&nbsp;&nbsp;}<br>
+}<br><br>
+
+class Cat extends Animal {<br>
+&nbsp;&nbsp;void sound() {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;System.out.println("Meow");<br>
+&nbsp;&nbsp;}<br>
+}Polymorphism - Method Overloading
+<h1 style="color: brown">Interface
+
+</h1>
+  <p style="font-size: 25px;">
+    interface Drawable {<br>
+&nbsp;&nbsp;void draw();<br>
+}<br><br>
+
+class Rectangle implements Drawable {<br>
+&nbsp;&nbsp;public void draw() {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;System.out.println("Drawing Rectangle");<br>
+&nbsp;&nbsp;}<br>
+}
+</p>
+<h1>hey coder! click here to solve questions on python</h1>
+<button onclick="window.location='mcq4.html'">click here</button>
+
+
+
+
+        </body>
+         </head>
+            </html>

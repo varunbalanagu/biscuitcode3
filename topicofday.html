@@ -1,0 +1,123 @@
+<html>
+    <head>
+        <style>
+            body{
+                background-color: orangered;
+                background-size: 1080px;
+
+            }
+            button{
+                background-color: beige;
+                height: 250px;
+                width: 250px;
+
+            }
+            p{
+                
+                font-size: 50px;
+            }
+        </style>
+    </head>
+    <body>
+        
+        
+        <h1>Hey! coder let us see which topic is your biscuit today</h1>
+        <button >Today's Topic </button>
+        <p id="output"></p>
+        <p id="output2"></p>
+        <p id="output3"></p>
+        <p id="output4"></p>
+        <script>
+             function yourFunction() {
+    console.log("Function ran on: " + new Date().toLocaleString());
+    
+    // Your logic goes here...
+
+    scheduleNextRun(); // Schedule the function to run again when the date changes
+}
+            function myfunction(){
+                const today = new Date().toDateString(); // e.g., "Mon May 27 2025"
+    let storedDate = localStorage.getItem("topicDate");
+    let topic = localStorage.getItem("topic");
+
+    const arr = ["C", "C++", "java", "python", "HTML", "Css"];
+
+    // If stored date is not today, pick new topic and store
+    if (storedDate !== today) {
+        topic = arr[Math.floor(Math.random() * arr.length)];
+        localStorage.setItem("topicDate", today);
+        localStorage.setItem("topic", topic);
+    }
+               
+            
+               if(topic=="C")
+               {
+                // const h=document.createElement("h1");
+                // h.textContent="hey coder! let us concentrate on C";
+                 document.getElementById("output2").textContent="hey coder! let us concentrate on C";
+                // document.appendChild(h);
+                document.getElementById("output").innerHTML='<a href="C.html">go to path</a>';
+                // delay=12*100;
+              
+               }
+                else if(topic=="C++")
+               {
+                document.getElementById("output2").textContent="hey coder! let us concentrate on C++";
+                document.getElementById("output").innerHTML='<a href="C++.html">go to path</a>';
+                // setInterval(myfunction(),12*10000);
+                // delay=12*100;
+               }
+               else  if(topic=="python")
+               {
+                document.getElementById("output2").textContent="hey coder! let us concentrate on python";
+                document.getElementById("output").innerHTML='<a href="python.html">go to path</a>';
+                // delay=12*100;
+                
+               }
+                else if(topic=="java")
+               {
+                document.getElementById("output2").textContent="hey coder! let us concentrate on java";
+                document.getElementById("output").innerHTML='<a href="java.html">go to path</a>';
+                // delay=12*100;
+                
+               }
+                else  if(topic=="HTML")
+               {
+                document.getElementById("output2").textContent="hey coder! let us concentrate on HTML";
+                document.getElementById("output").innerHTML='<a href="HTML.html">go to path</a>';
+                // delay=12*100;
+                
+               }
+                else if(topic=="Css")
+               {
+                
+                document.getElementById("output2").textContent="hey coder! let us concentrate on Css";
+                document.getElementById("output").innerHTML='<a href="Css.html">go to path</a>';
+                // delay=12*100;
+               
+               }
+              
+
+ }
+ myfunction();
+  function scheduleNextRun() {
+        const now = new Date();
+        const tomorrow = new Date(now);
+        tomorrow.setHours(24, 0, 0, 0);
+        const msUntilMidnight = tomorrow - now;
+
+        setTimeout(() => {
+            myfunction();
+            scheduleNextRun();
+        }, msUntilMidnight);
+    }
+
+    scheduleNextRun();
+
+
+                
+            
+            
+        </script>
+    </body>
+</html>

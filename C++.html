@@ -1,0 +1,128 @@
+<html>
+    <head>
+        <style>
+            body{
+                background-color: darkgoldenrod;
+                background-size: 850px;
+            }
+            
+        </style>
+        <body>
+            <h1 style="color: azure; font-size: 25px; text-align: center;">C++ Language</h1>
+            <h1 style="color: azure;"> Structure of a C++ Program</h1>
+            <p style="font-size: 25px;">A C++ program starts with header file inclusion, followed by the main() function which is the entry point. The program is typically written inside functions or classes. The std namespace is commonly used to simplify input/output operations. Statements end with a semicolon.</p>
+              <h1 style="color: azure;"> Object-Oriented Programming</h1>
+           <p style="font-size: 25px;">C++ supports OOP, which includes classes, objects, inheritance, polymorphism, encapsulation, and abstraction. These principles help manage complexity and promote code reuse</p>
+               <h1 style="color: azure;">  Classes and Objects</h1>
+                <p style="font-size: 25px;">A class defines a blueprint for objects, which are instances of that class. Members of a class include data members (variables) and member functions (methods).</p>
+               <h1 style="color: azure;"> Constructors and Destructors</h1>
+                <p style="font-size: 25px;"> Constructors are special functions that initialize objects and are called automatically when an object is created. Destructors are used to clean up resources when an object is destroyed.</p>
+               <h1 style="color: azure;"> Inheritance</h1>
+                <p style="font-size: 25px;">Constructors are special functions that initialize objects and are called automatically when an object is created. Destructors are used to clean up resources when an object is destroyed. </p>
+                  <h1 style="color: azure;"> polymorphism</h1>
+                   <p style="font-size: 25px;">
+                    Polymorphism enables the same function or operator to behave differently in different contexts. C++ supports compile-time (function overloading) and run-time (virtual functions) polymorphism
+                   </p>
+                     <h1 style="color: azure;"> Templates</h1>
+                    <p style="font-size: 25px;">Templates allow writing generic programs and functions that work with any data type. They support code reuse and type safety.</p>
+                     <h1 style="color: azure;"> Standard templates</h1>
+                     <p style="font-size: 25px;">STL is a powerful set of C++ template classes for common data structures (like vectors, stacks, maps) and algorithms (like sorting, searching). </p>
+                      <h1 style="color: azure;"> File handling</h1>
+                        <p style="font-size: 25px;">File operations in C++ are handled using streams like ifstream and ofstream, which allow reading from and writing to files efficiently.</p>
+                   <h1 style="color: azure;"> CRUNCHY SYNTAXES</h1>
+                        <p style="font-size: 25px;">class ClassName {<br>  
+public:
+    <br>  
+    int data;   
+    <br>         // Data member
+    void func();      
+    <br>   // Member function declaration
+};
+
+ClassName obj; 
+<br>          // Creating an object
+obj.data = 10;
+<br>           // Accessing data member
+obj.func(); 
+<br>   
+          // Calling member function
+          <br>  
+          <br>  
+Explanation:
+A class is a blueprint for creating objects. It contains data (variables) and functions (methods) to operate on that data. An object is an instance of a class.
+
+class Encapsulated {
+    <br>
+private:
+    <br>
+    int hiddenData;
+    <br>     // Private data
+public:
+    <br>  
+    void setData(int val) {
+        <br>  
+        hiddenData = val;
+        <br>      // Setter function
+    }
+    <br>  
+    int getData() {
+        <br>  
+        return hiddenData; 
+        <br>    // Getter function
+    }
+};
+<br>
+<br>
+<br>
+Explanation:
+Encapsulation hides the internal state of an object and only exposes methods to access or modify it, protecting data from direct access.
+<br>
+class Example {
+    <br>
+public:
+<br>
+    int x;
+    <br>
+    Example() { 
+        <br>          // Constructor with no return type
+        x = 0;            // Initializes x
+    }
+};
+Explanation:
+A constructor is a special function automatically called when an object is created. It initializes object data members.
+<br>
+class Base {
+    <br>
+public:
+<br>
+    void show() {
+        <br>
+        cout << "Base class function\n";
+        <br>
+    }
+};
+<br>
+class Derived : public Base {
+    <br>
+public:
+    <br>
+    void display() {
+        <br>
+        cout << "Derived class function\n";
+        <br>
+    }
+};
+Explanation:
+Inheritance allows a class (derived) to inherit members (variables/functions) from another class (base). It promotes code reuse and hierarchical relationships.
+
+
+</p>
+<h1>
+    hey coder ! click here to practise your language skills 
+</h1>
+<button style="height: 45px; width: 80px; background-color: white;" onclick='window.location="mcq2.html"'>click here</button>
+
+
+        </body>
+    </head>
+</html>
