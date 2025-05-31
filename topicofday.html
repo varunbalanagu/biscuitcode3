@@ -113,6 +113,15 @@
     }
 
     scheduleNextRun();
+    <button onclick="resetTopic()">Reset Topic</button>
+
+function resetTopic() {
+  localStorage.removeItem("topic");
+  localStorage.removeItem("topicDate");
+  alert("Topic reset! Reloading...");
+  location.reload();  // reload the page to pick a new topic
+}
+
 
 
                 
